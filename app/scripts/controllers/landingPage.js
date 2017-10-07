@@ -9,14 +9,16 @@ angular.module('leadsApp').controller('landingPageCtrl', function ($scope, $http
   				homeSquareFootage: null
         }
 
-  function getInitialID(){
+  $scope.getInitialID = function(){
     $http.post('/landingPage/getInitId', $scope.leadsForm).then(function(result){
+      console.log("testing");
+      console.log(result);
       $scope.leadsForm.id = result.data.id;
     }).catch(function(err){
       console.log("ERROR", err)
     })
   }
-  getInitialID();
+  $scope.getInitialID();
 
   $scope.saveOnChange = function(){
     $http.post('/landingPage/add', $scope.leadsForm).then(function(){
@@ -27,9 +29,7 @@ angular.module('leadsApp').controller('landingPageCtrl', function ($scope, $http
 
   $scope.submit = function(){
     $http.post('/landingPage/add', $scope.leadsForm).then(function(){
-      // $window.location.reload();
-      console.log($scope.form.myLeadsForm);
-      $scope.myLeadsForm.$setPristine()
+      $window.location.reload();
     }).catch(function(err){
       console.log("ERROR", err)
     })

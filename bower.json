@@ -1,0 +1,23 @@
+{
+  "name": "leadsApp",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Jonathan <jonathankim1228@hotmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jonathan1228/leadsApp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-mocks": "^1.6.6",
+    "angular-route": "^1.6.6",
+    "sinon": "^4.0.1"
+  }
+}
