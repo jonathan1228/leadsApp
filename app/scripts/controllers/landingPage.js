@@ -20,7 +20,6 @@ angular.module('leadsApp').controller('landingPageCtrl', function ($scope, $http
 
   $scope.saveOnChange = function(){
     $http.post('/landingPage/add', $scope.leadsForm).then(function(){
-      console.log($scope.leadsForm);
     }).catch(function(err){
       console.log("ERROR", err)
     })
@@ -29,6 +28,8 @@ angular.module('leadsApp').controller('landingPageCtrl', function ($scope, $http
   $scope.submit = function(){
     $http.post('/landingPage/add', $scope.leadsForm).then(function(){
       // $window.location.reload();
+      console.log($scope.form.myLeadsForm);
+      $scope.myLeadsForm.$setPristine()
     }).catch(function(err){
       console.log("ERROR", err)
     })

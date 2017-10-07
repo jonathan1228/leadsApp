@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
 
   <div class="row">
       <form name="myLeadsForm" ng-submit="submit()">
@@ -24,4 +24,77 @@
       </form>
     </div>
 
-</div>
+</div> -->
+<div class="container">
+			<div class="row main">
+				<div class="main-login main-center">
+				<h5>Sign up once and watch any of our free demos.</h5>
+					<form name="myLeadsForm" ng-submit="submit()">
+
+						<div class="form-group">
+							<label for="firstName" class="cols-sm-2 control-label">First Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="firstName" id="firstName"  ng-change="saveOnChange()" ng-model="leadsForm.firstName"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lastName" class="cols-sm-2 control-label">Last Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="lastName" id="lastName"  ng-change="saveOnChange()" ng-model="leadsForm.lastName"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Email</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="email" id="email"  ng-change="saveOnChange()" ng-model="leadsForm.email"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="phoneNumber" class="cols-sm-2 control-label">Phone Number</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="phoneNumber" id="phoneNumber" ng-change="saveOnChange()" ng-model="leadsForm.phoneNumber"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="address" class="cols-sm-2 control-label">Address</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-address-book fa-lg" aria-hidden="true"></i></span>
+									<input type="address" class="form-control" name="address" id="address" ng-change="saveOnChange()" ng-model="leadsForm.address"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="homeSquareFootage" class="cols-sm-2 control-label">Home Square Footage</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-home fa-lg" aria-hidden="true"></i></span>
+									<input type="address" class="form-control" name="homeSquareFootage" id="homeSquareFootage" ng-change="saveOnChange()" ng-model="leadsForm.homeSquareFootage"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group ">
+              <a type="submit"  class="btn btn-success btn-lg btn-block login-button">Submit</a>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>

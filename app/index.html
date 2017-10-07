@@ -4,7 +4,14 @@
   <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+		<!-- Website Font style -->
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -15,12 +22,22 @@
     <script src="scripts/controllers/leadsList.js"></script>
   </head>
   <body ng-app="leadsApp">
-    <h1> TESTING INDEX PAGE </h1>
-    <br>
-    <a href="#/">landingPage</a>
-    <a href="#/leadsDetail">leadsDetail</a>
-    <a href="#/leadsList">leadsList</a>
-    <br>
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#/">app</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav">
+                <li><a href="#/">landingPage</a></li>
+                <li><a href="#/leadsList">leadsList</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     <div class="container">
       <div ng-view></div>
     </div>
