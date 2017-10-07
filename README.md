@@ -8,5 +8,9 @@
 
 * I will figure out how to mock the $http for my own sake since I don't like having this project without any tests. If you wish to see it, I will glady push it once I figure it out.
 
+* Will need to implement better solution to refreshing the form after submitting. Currently with the way things are set up, new objects are being stored in the database with just the created_at property being defined. 
+
 * run the project using nodemon and it will be on port 3000
+
+* I know I can do a lot better if given the time to polish up things up, please provide feedback!
 
