@@ -9,7 +9,7 @@ angular.module('leadsApp', ['ngRoute'])
         templateUrl: 'views/leadsList.html',
         controller: 'leadsListCtrl'
       })
-      .when('/leadsDetail', {
+      .when('/leadsDetail/:id', {
         templateUrl: 'views/leadsDetail.html',
         controller: 'leadsDetailCtrl'
       })
