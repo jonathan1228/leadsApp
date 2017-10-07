@@ -3,7 +3,7 @@ var router = express.Router();
 var knex = require('../db/knex');
 /* GET home page. */
 router.post('/getInitId', function(req, res, next) {
-  knex('leads').insert({
+  knex('storeleads').insert({
   				firstName: req.body.firstName,
   				lastName: req.body.lastName,
   				phoneNumber: req.body.phoneNumber,
@@ -18,7 +18,7 @@ router.post('/getInitId', function(req, res, next) {
 });
 
 router.post('/add', function(req, res, next){
-  knex('leads').where({id:req.body.id}).update({
+  knex('storeleads').where({id:req.body.id}).update({
     firstName: req.body.firstName,
     lastName: req.body.lastName,
     phoneNumber: req.body.phoneNumber,

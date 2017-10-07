@@ -3,22 +3,22 @@
   <div class="row">
       <form name="myLeadsForm" ng-submit="submit()">
          <label for="firstName">firstName</label>
-         <input name="firstName" type="text" ng-model="leadsForm.firstName"/>
+         <input name="firstName" type="text" ng-change="saveOnChange()" ng-model="leadsForm.firstName"/>
          <br>
          <label for="lastName">LastName</label>
-         <input name="lastName" type="text" ng-model="leadsForm.lastName"/>
+         <input name="lastName" type="text" ng-change="saveOnChange()" ng-model="leadsForm.lastName"/>
          <br>
          <label for="email">Email</label>
-         <input name="email" type="email" ng-model="leadsForm.email"/>
+         <input name="email" type="email" ng-change="saveOnChange()" ng-model="leadsForm.email"/>
          <br>
          <label for="phoneNumber">Phone Number</label>
-         <input name="phoneNumber" type="tel" ng-model="leadsForm.phoneNumber"/>
+         <input name="phoneNumber" type="tel" ng-change="saveOnChange()" ng-model="leadsForm.phoneNumber"/>
          <br>
          <label for="address">Address</label>
-         <input name="address" type="text" ng-model="leadsForm.address"/>
+         <input name="address" type="text" ng-change="saveOnChange()" ng-model="leadsForm.address"/>
          <br>
          <label for="homeSquareFootage">Home Square Footage</label>
-         <input name="homeSquareFootage" type="number" ng-model="leadsForm.homeSquareFootage"/>
+         <input name="homeSquareFootage" type="number" ng-change="saveOnChange()" ng-model="leadsForm.homeSquareFootage"/>
          <br>
          <button type="submit">Submit</button>
       </form>

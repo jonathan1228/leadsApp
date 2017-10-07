@@ -17,9 +17,18 @@ angular.module('leadsApp').controller('landingPageCtrl', function ($scope, $http
     })
   }
   getInitialID();
+
+  $scope.saveOnChange = function(){
+    $http.post('/landingPage/add', $scope.leadsForm).then(function(){
+      console.log($scope.leadsForm);
+    }).catch(function(err){
+      console.log("ERROR", err)
+    })
+  }
+
   $scope.submit = function(){
     $http.post('/landingPage/add', $scope.leadsForm).then(function(){
-      $window.location.reload();
+      // $window.location.reload();
     }).catch(function(err){
       console.log("ERROR", err)
     })
