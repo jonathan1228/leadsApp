@@ -8,7 +8,8 @@
 ## EDIT (TESTS NOW WORK):
 * EDIT: This project had me waking up early and not being able to fall back to sleep. I just had to figure out how to write basic unit tests for angular's $http using $httpBackend. I successfully wrote karma tests for this project. I am satisfied to know this project has basic unit tests and feel good that I figured it out.
 
-* In order to run the test first ```npm install -g karma```then ```npm install``` and then run ```karma start```.
+* In order to run the test do the following:
+```npm install -g karma``` ```npm install -g karma-cli``` ```npm install -g bower``` ```npm install```  ```karma start```.
 
 * I will figure out how to mock the $http for my own sake since I don't like having this project without any tests. If you wish to see it, I will glady push it once I figure it out.
 
