@@ -1,5 +1,6 @@
 angular.module('leadsApp').controller('landingPageCtrl', function ($scope, $http, $window) {
-  $scope.landingPage = "LANDINGPAGE";
+  $scope.saved = '';
+  $scope.submitted = '';
   $scope.leadsForm = {
   				firstName: '',
   				lastName: '',
@@ -11,7 +12,6 @@ angular.module('leadsApp').controller('landingPageCtrl', function ($scope, $http
 
   $scope.getInitialID = function(){
     $http.post('/landingPage/getInitId', $scope.leadsForm).then(function(result){
-      console.log(result);
       $scope.leadsForm.id = result.data.id;
     }).catch(function(err){
       console.log("ERROR", err)
@@ -20,7 +20,8 @@ angular.module('leadsApp').controller('landingPageCtrl', function ($scope, $http
   $scope.getInitialID();
 
   $scope.saveOnChange = function(){
-    $http.post('/landingPage/add', $scope.leadsForm).then(function(){
+    $http.post('/landingPage/add', $scope.leadsForm).then(function(val){
+      $scope.saved = true
     }).catch(function(err){
       console.log("ERROR", err)
     })
@@ -28,7 +29,7 @@ angular.module('leadsApp').controller('landingPageCtrl', function ($scope, $http
 
   $scope.submit = function(){
     $http.post('/landingPage/add', $scope.leadsForm).then(function(){
-      console.log("testing");
+      $scope.submitted = true;;
       $window.location.reload();
     }).catch(function(err){
       console.log("ERROR", err)

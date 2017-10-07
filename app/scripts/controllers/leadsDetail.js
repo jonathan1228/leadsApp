@@ -1,10 +1,9 @@
 angular.module('leadsApp').controller('leadsDetailCtrl', function ($scope, $http, $routeParams) {
 
-  function init(){
+  $scope.init = function(){
     $http.get('/leadsDetail/' + $routeParams.id).then(function(result){
-      console.log(result.data);
       $scope.leadsDetail = result.data;
     })
   }
-  init()
+  $scope.init()
 });

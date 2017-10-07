@@ -11,7 +11,6 @@ router.post('/getInitId', function(req, res, next) {
   				address: req.body.address,
   				homeSquareFootage: req.body.homeSquareFootage
         }).returning('id').then(function(data){
-  					console.log("ID initialized", data[0])
             res.json({id: data[0]})
   			})
 
@@ -26,7 +25,6 @@ router.post('/add', function(req, res, next){
     address: req.body.address,
     homeSquareFootage: req.body.homeSquareFootage
   }).returning('id').then(function(data){
-      console.log("returning with id", data[0]);
       res.json({id: data[0]})
   })
 })
