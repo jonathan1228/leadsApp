@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/landingPage.js"></script>
+    <script src="scripts/controllers/leadsDetail.js"></script>
+    <script src="scripts/controllers/leadsList.js"></script>
+  </head>
+  <body ng-app="leadsApp">
+    <h1> TESTING INDEX PAGE </h1>
+    <br>
+    <a href="#/landingPage">landingPage</a>
+    <a href="#/leadsDetail">leadsDetail</a>
+    <a href="#/leadsList">leadsList</a>
+    <br>
+    <div class="container">
+      <div ng-view></div>
+    </div>
+  </body>
+</html>
