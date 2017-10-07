@@ -8,7 +8,7 @@
         <th>View Lead</th>
       </tr>
     </thead>
-    <tbody ng-repeat="lead in leadsList">
+    <tbody ng-repeat="lead in leadsList | orderBy:'firstName'">
       <tr>
         <td>{{ lead.firstName }}</td>
         <td>{{ lead.lastName }}</td>
