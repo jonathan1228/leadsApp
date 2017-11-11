@@ -1,4 +1,4 @@
-## Leads App
+## Leads App (Basic full stack coding exercise for a start up company)
 
 * Created using Angular, Express, Node.js, and postgreSQL.
 
